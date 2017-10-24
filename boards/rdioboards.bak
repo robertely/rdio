@@ -1,0 +1,382 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:rdioboards-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_02X07 J1
+U 1 1 5946C118
+P 6200 4450
+F 0 "J1" H 6200 4850 50  0000 C CNN
+F 1 "CU40025SCPB" V 6200 4450 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x07_Pitch2.54mm" H 6200 3250 50  0001 C CNN
+F 3 "" H 6200 3250 50  0001 C CNN
+	1    6200 4450
+	0    -1   1    0   
+$EndComp
+$Comp
+L CONN_01X12 J2
+U 1 1 59470897
+P 6500 2700
+F 0 "J2" H 6500 3350 50  0000 C CNN
+F 1 "Pro Micro" V 6600 2700 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x12_Pitch2.54mm" H 6500 2700 50  0001 C CNN
+F 3 "" H 6500 2700 50  0001 C CNN
+	1    6500 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X12 J3
+U 1 1 59470907
+P 7000 2700
+F 0 "J3" H 7000 3350 50  0000 C CNN
+F 1 "Pro Micro" V 7100 2700 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x12_Pitch2.54mm" H 7000 2700 50  0001 C CNN
+F 3 "" H 7000 2700 50  0001 C CNN
+	1    7000 2700
+	-1   0    0    -1  
+$EndComp
+Text Notes 6100 3250 0    63   ~ 0
+D1\nD0\nGND\nGND\nD2\nD3\nD4\nD5\nD6\nD7\nD8\nD9
+Text Notes 7300 3250 0    63   ~ 0
+RAW\nGND\nRST\nVCC\nD21\nD20\nD19\nD18\nD15\nD14\nD16\nD10
+Text Notes 6500 4150 1    63   ~ 0
+GND\nFNC_\nR/W\nD0\nD2\nD4\nD6
+Text Notes 6500 4750 3    63   ~ 0
+VCC\nRS\nE\nD1\nD3\nD5\nD7\n
+Wire Wire Line
+	6200 3650 6200 4200
+Wire Wire Line
+	7400 3250 7200 3250
+Wire Wire Line
+	6300 3800 6300 4200
+Wire Wire Line
+	7450 3150 7200 3150
+Wire Wire Line
+	6400 3950 6400 4200
+Wire Wire Line
+	7500 3050 7200 3050
+Wire Wire Line
+	6500 4200 6500 4100
+Wire Wire Line
+	7550 2950 7200 2950
+Wire Wire Line
+	7600 2850 7600 4750
+Wire Wire Line
+	7600 2850 7200 2850
+$Comp
+L R R3
+U 1 1 59471058
+P 6750 3650
+F 0 "R3" V 6830 3650 50  0000 C CNN
+F 1 "1K" V 6750 3650 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 6680 3650 50  0001 C CNN
+F 3 "" H 6750 3650 50  0001 C CNN
+	1    6750 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L R R5
+U 1 1 594710E7
+P 6950 3800
+F 0 "R5" V 7030 3800 50  0000 C CNN
+F 1 "1K" V 6950 3800 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 6880 3800 50  0001 C CNN
+F 3 "" H 6950 3800 50  0001 C CNN
+	1    6950 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L R R7
+U 1 1 59471180
+P 7150 3950
+F 0 "R7" V 7230 3950 50  0000 C CNN
+F 1 "1K" V 7150 3950 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 7080 3950 50  0001 C CNN
+F 3 "" H 7150 3950 50  0001 C CNN
+	1    7150 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7400 3250 7400 3650
+Wire Wire Line
+	7400 3650 6900 3650
+Wire Wire Line
+	7450 3150 7450 3800
+Wire Wire Line
+	7450 3800 7100 3800
+Wire Wire Line
+	7500 3050 7500 3950
+Wire Wire Line
+	7500 3950 7300 3950
+Wire Wire Line
+	7550 2950 7550 4100
+Wire Wire Line
+	7550 4100 7500 4100
+Wire Wire Line
+	6500 4100 7200 4100
+Wire Wire Line
+	6400 3950 7000 3950
+Wire Wire Line
+	6800 3800 6300 3800
+Wire Wire Line
+	6600 3650 6200 3650
+NoConn ~ 7200 2350
+Wire Wire Line
+	7200 2750 7650 2750
+Wire Wire Line
+	7650 2750 7650 4900
+Wire Wire Line
+	7200 2650 7700 2650
+Wire Wire Line
+	7700 2650 7700 5050
+Wire Wire Line
+	7200 2550 7750 2550
+Wire Wire Line
+	7750 2550 7750 5200
+$Comp
+L R R4
+U 1 1 594721CB
+P 6750 4750
+F 0 "R4" V 6830 4750 50  0000 C CNN
+F 1 "1K" V 6750 4750 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 6680 4750 50  0001 C CNN
+F 3 "" H 6750 4750 50  0001 C CNN
+	1    6750 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L R R6
+U 1 1 59472261
+P 6950 4900
+F 0 "R6" V 7030 4900 50  0000 C CNN
+F 1 "1K" V 6950 4900 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 6880 4900 50  0001 C CNN
+F 3 "" H 6950 4900 50  0001 C CNN
+	1    6950 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L R R8
+U 1 1 594722AD
+P 7150 5050
+F 0 "R8" V 7230 5050 50  0000 C CNN
+F 1 "1K" V 7150 5050 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 7080 5050 50  0001 C CNN
+F 3 "" H 7150 5050 50  0001 C CNN
+	1    7150 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L R R10
+U 1 1 594722E9
+P 7350 5200
+F 0 "R10" V 7430 5200 50  0000 C CNN
+F 1 "1K" V 7350 5200 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 7280 5200 50  0001 C CNN
+F 3 "" H 7350 5200 50  0001 C CNN
+	1    7350 5200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6500 4700 6500 4750
+Wire Wire Line
+	6500 4750 6600 4750
+Wire Wire Line
+	6400 4700 6400 4900
+Wire Wire Line
+	6400 4900 6800 4900
+Wire Wire Line
+	6300 4700 6300 5050
+Wire Wire Line
+	6300 5050 7000 5050
+Wire Wire Line
+	6200 4700 6200 5200
+Wire Wire Line
+	6200 5200 7200 5200
+Wire Wire Line
+	7600 4750 6900 4750
+Wire Wire Line
+	7650 4900 7100 4900
+Wire Wire Line
+	7700 5050 7300 5050
+Wire Wire Line
+	7750 5200 7500 5200
+NoConn ~ 6000 4200
+$Comp
+L R R2
+U 1 1 5947355E
+P 6100 3700
+F 0 "R2" V 6180 3700 50  0000 C CNN
+F 1 "1K" V 6100 3700 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 6030 3700 50  0001 C CNN
+F 3 "" H 6100 3700 50  0001 C CNN
+	1    6100 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R1
+U 1 1 594735EE
+P 5650 3400
+F 0 "R1" V 5730 3400 50  0000 C CNN
+F 1 "1K" V 5650 3400 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 5580 3400 50  0001 C CNN
+F 3 "" H 5650 3400 50  0001 C CNN
+	1    5650 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6100 4200 6100 3850
+Wire Wire Line
+	6100 3550 6100 3250
+Wire Wire Line
+	6100 3250 6300 3250
+Wire Wire Line
+	5650 3250 5650 3150
+Wire Wire Line
+	5650 3150 6300 3150
+Wire Wire Line
+	6000 4700 6000 5000
+Wire Wire Line
+	6000 5000 5650 5000
+Wire Wire Line
+	5650 5000 5650 3550
+Wire Wire Line
+	5900 1800 5900 4200
+Wire Wire Line
+	5900 2450 6300 2450
+Wire Wire Line
+	6300 2350 5900 2350
+Connection ~ 5900 2450
+Wire Wire Line
+	7200 2250 7600 2250
+Wire Wire Line
+	7600 2250 7600 1800
+Wire Wire Line
+	7600 1800 5900 1800
+Connection ~ 5900 2350
+Wire Wire Line
+	7200 2150 7500 2150
+Wire Wire Line
+	7500 2150 7500 1900
+$Comp
+L CONN_01X12 J4
+U 1 1 59475AB0
+P 4900 2600
+F 0 "J4" H 4900 3250 50  0000 C CNN
+F 1 "EXPANSION" V 5000 2600 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x12_Pitch2.54mm" H 4900 2600 50  0001 C CNN
+F 3 "" H 4900 2600 50  0001 C CNN
+	1    4900 2600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 1700 7650 1700
+Wire Wire Line
+	7650 1700 7650 2450
+Wire Wire Line
+	7650 2450 7200 2450
+Wire Wire Line
+	5100 2250 5300 2250
+Wire Wire Line
+	5300 2250 5300 1700
+Wire Wire Line
+	5100 2350 5750 2350
+Wire Wire Line
+	5750 2350 5750 2150
+Wire Wire Line
+	5750 2150 6300 2150
+Wire Wire Line
+	5100 2450 5800 2450
+Wire Wire Line
+	5800 2450 5800 2250
+Wire Wire Line
+	5800 2250 6300 2250
+Wire Wire Line
+	5100 2550 6300 2550
+Wire Wire Line
+	5100 2650 6300 2650
+Wire Wire Line
+	5100 2750 6300 2750
+Wire Wire Line
+	6300 2850 5100 2850
+Wire Wire Line
+	6300 2950 5100 2950
+Wire Wire Line
+	5100 2050 5900 2050
+Connection ~ 5900 2050
+Text Notes 5100 3150 0    63   ~ 0
+GND\nRAW\nVCC\nD1\nD0\nD2\nD3\nD4\nD5\nD6\nGND\nGND\n
+$Comp
+L R R9
+U 1 1 5947122E
+P 7350 4100
+F 0 "R9" V 7430 4100 50  0000 C CNN
+F 1 "1K" V 7350 4100 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 7280 4100 50  0001 C CNN
+F 3 "" H 7350 4100 50  0001 C CNN
+	1    7350 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5949C647
+P 5500 3700
+F 0 "R?" V 5580 3700 50  0000 C CNN
+F 1 "1K" V 5500 3700 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 5430 3700 50  0001 C CNN
+F 3 "" H 5500 3700 50  0001 C CNN
+	1    5500 3700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6300 3050 5500 3050
+Wire Wire Line
+	5500 3050 5500 3550
+Wire Wire Line
+	5500 3850 5500 5050
+Wire Wire Line
+	5500 5050 6100 5050
+Wire Wire Line
+	6100 5050 6100 4700
+$EndSCHEMATC

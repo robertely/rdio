@@ -1,0 +1,12 @@
+[playlist]
+File1=http://14523.live.streamtheworld.com:80/KUNCFM_64_SC
+File2=http://14523.live.streamtheworld.com:3690/KUNCFM_64_SC
+File3=http://18543.live.streamtheworld.com:80/KUNCFM_64_SC
+File4=http://18543.live.streamtheworld.com:3690/KUNCFM_64_SC
+File5=http://13983.live.streamtheworld.com:80/KUNCFM_64_SC
+File6=http://13983.live.streamtheworld.com:3690/KUNCFM_64_SC
+Title1=KUNCFM_64_SC
+Title2=KUNCFM_64_SC-Bak
+Length1=-1
+NumberOfEntries=6
+Version=2
