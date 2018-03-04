@@ -16,7 +16,7 @@ for station, _ in stations.items():
 spectrum += tunerBookEnds
 
 # Put in the location of each station on the "spectrum"
-# IDGAF: This is wasteful as a search. I do not give a fuck.
+# IDGAF: This is wasteful as a search.
 for station, _ in stations.items():
     locStart = spectrum.index(station)
     locEnd = locStart + len(station)
