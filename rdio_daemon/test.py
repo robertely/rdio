@@ -19,17 +19,17 @@ x.play()
 sleep(5)
 # From y to static
 for i in range(1,100):
-    audio_player.audio_player.lin_fade(y,static,i)
+    lin_fade(y,static,i)
     sleep(.05)
 sleep(2)
 # From static to x
 for i in range(1,100):
-    audio_player.audio_player.lin_fade(static,x,i)
+    audio_player.lin_fade(static,x,i)
     sleep(.05)
 sleep(2)
 # From x to static
 for i in range(1,100):
-    audio_player.audio_player.lin_fade(x,static,i)
+    audio_player.lin_fade(x,static,i)
     sleep(.05)
 sleep(10)
 exit(0)
