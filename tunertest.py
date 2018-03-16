@@ -12,7 +12,7 @@ tunerBookEnds = ".   " * 6
 spectrum = tunerBookEnds
 for station, _ in stations.items():
     spectrum += "-%s-" % station
-    spectrum += "   .   .   .   "
+    spectrum += "  .  .  "
 spectrum += tunerBookEnds
 
 # Put in the location of each station on the "spectrum"

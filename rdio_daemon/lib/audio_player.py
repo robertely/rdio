@@ -2,10 +2,15 @@ from vlc import Instance
 from math import log
 
 class audio_player:
-    def __init__(self, mediapath):
+    def __init__(self, mediapath = ''):
         self.mediapath = mediapath
         self.instance = Instance()
         self.player = self.instance.media_player_new()
+        self.media = self.instance.media_new(self.mediapath)
+        self.player.set_media(self.media)
+
+    def load(self, mediapath):
+        self.mediapath = mediapath
         self.media = self.instance.media_new(self.mediapath)
         self.player.set_media(self.media)
 

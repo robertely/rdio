@@ -1,8 +1,8 @@
 from alsaaudio import Mixer, MIXER_CHANNEL_ALL # https://github.com/larsimmisch/pyalsaaudio
 
-class global_mixer:
-    def __init__(self):
-        self.mixer = alsaaudio.Mixer("Digital")
+class alsa_mixer:
+    def __init__(self, mixer="Digital"):
+        self.mixer = alsaaudio.Mixer(mixer)
 
     def set_vol(level):
         self.mixer.setvolume(level, MIXER_CHANNEL_ALL)

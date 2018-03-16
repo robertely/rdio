@@ -5,42 +5,41 @@
 #    https://github.com/toml-lang/toml
 # Project
 #    https://github.com/robertely/rdio
-
+# title = "TOML Example"
+#
 [display]
 port = "/dev/ttyACM0"
 baud = 250000
-# [input]
 
-[bands.broadcast]
-  # Position indicates order on dial
-  [[WNYC]]
-    call = "WNYC"
-    freq = 93.9
-    local = "New York, you can just say New York"
-    stream = "http://wnyc-ice.streamguys1.com:80/njprw"
-    description = ""
-  [[KUNC]]
-    call = "KUNC"
-    freq = 93.9
-    local = "Greeley, Colorado"
-    description = "http://18583.live.streamtheworld.com/KUNCFM_64.mp3"
-  [[WBEZ]]
-    call = "WBEZ"
-    freq = 93.9
-    local = "Chicago, Illinois"
-    description = "http://stream.wbez.org/wbez128.mp3"
-  [[CPR News]]
-    call = "WBEZ"
-    freq = 93.9
-    local = "Colorado, Colorado"
-    description = "http://stream.wbez.org/wbez128.mp3"
-  [[CPR Open Air]]
-    call = "WBEZ"
-    freq = 93.9
-    local = "Denver, Colorado"
-    description = "http://66.162.107.142/cpr3_lo"
-  [[BBC Radio 1]]
-    call = "Radio 1"
-    freq = 97.7
-    local = "London, England"
-    description = "http://66.162.107.142/cpr3_lo"
+# Position indicates order on dial
+[[bands.broadcast]]
+  call = "WNYC"
+  freq = 93.9
+  local = "New York, you can just say New York"
+  stream = "http://fm939.wnyc.org/wnycfm"
+  description = ""
+[[bands.broadcast]]
+  call = "KUNC"
+  freq = 93.9
+  local = "Greeley, Colorado"
+  description = "http://18583.live.streamtheworld.com/KUNCFM_64.mp3"
+[[bands.broadcast]]
+  call = "WBEZ"
+  freq = 93.9
+  local = "Chicago, Illinois"
+  description = "http://stream.wbez.org/wbez128.mp3"
+[[bands.broadcast]]
+  call = "CPR"
+  freq = 93.9
+  local = "Colorado, Colorado"
+  description = "http://stream.wbez.org/wbez128.mp3"
+[[bands.broadcast]]
+  call = "CPR Open Air"
+  freq = 93.9
+  local = "Denver, Colorado"
+  description = "http://66.162.107.142/cpr3_lo"
+[[bands.broadcast]]
+  call = "Radio 1"
+  freq = 97.7
+  local = "London, England"
+  description = "http://66.162.107.142/cpr3_lo"
