@@ -22,24 +22,24 @@ baud = 250000
   call = "KUNC"
   freq = 93.9
   local = "Greeley, Colorado"
-  description = "http://18583.live.streamtheworld.com/KUNCFM_64.mp3"
+  stream = "http://18583.live.streamtheworld.com/KUNCFM_64.mp3"
 [[bands.broadcast]]
   call = "WBEZ"
   freq = 93.9
   local = "Chicago, Illinois"
-  description = "http://stream.wbez.org/wbez128.mp3"
+  stream = "http://stream.wbez.org/wbez128.mp3"
 [[bands.broadcast]]
   call = "CPR"
   freq = 93.9
   local = "Colorado, Colorado"
-  description = "http://stream.wbez.org/wbez128.mp3"
+  stream = "http://stream.wbez.org/wbez128.mp3"
 [[bands.broadcast]]
   call = "CPR Open Air"
   freq = 93.9
   local = "Denver, Colorado"
-  description = "http://66.162.107.142/cpr3_lo"
+  stream = "http://66.162.107.142/cpr3_lo"
 [[bands.broadcast]]
   call = "Radio 1"
   freq = 97.7
   local = "London, England"
-  description = "http://66.162.107.142/cpr3_lo"
+  stream = "http://66.162.107.142/cpr3_lo"

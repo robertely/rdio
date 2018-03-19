@@ -13,9 +13,19 @@ def main():
     with open("conf/rdio.toml", 'r') as rawconf:
         conf = load(rawconf)
     # Set Initial state state
+    pprint(conf)
     state = {}
     state['running'] = True
     state['awake']   = True
+    state['volume'] = {}
+    state['volume']['static'] = 20
+    state['volume']['player'] = 0
+    state['volume']['system'] = 0
+    state['band'] = list(conf['bands'].keys())[0] # randomish
+    state['station'] = conf['bands'][state['band']][0]
+
+    print('---')
+    pprint(state)
     # TODO: Load state file from /var/lib/rdio/state.toml
 
 
@@ -23,7 +33,6 @@ def main():
 
     # Initialize static player
     vlc_static = audio_player.audio_player()
-    vlc_static.setvol(0)
     vlc_static.load('../RadioStatic.mp3')
     # Initialize radio player
     vlc_player = audio_player.audio_player()
@@ -32,10 +41,14 @@ def main():
 
     # Enter main loop
     while True:
-        # vlc_static.setvol(50)
-        # vlc_static.play()
-        # time.sleep(19)
-        break
+        vlc_static.setvol(state['volume']['static'])
+        vlc_static.play()
+        vlc_player.load(state['station']['stream'])
+        vlc_player.setvol(state['volume']['player'])
+        vlc_player.play()
+
+        sleep(120)
+        exit(0)
         # Read input
         # Update state
         # Render display
